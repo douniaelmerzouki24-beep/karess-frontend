@@ -5,7 +5,7 @@ import { Devis } from '../models/devis.model';
 
 @Injectable({ providedIn: 'root' })
 export class DevisService {
-  private apiUrl = 'karess-backend-production-6a64.up.railway.app/api/devis';
+  private apiUrl = 'https://karess-backend-production-6a64.up.railway.app/api/devis';
 
   constructor(private http: HttpClient) { }
 
