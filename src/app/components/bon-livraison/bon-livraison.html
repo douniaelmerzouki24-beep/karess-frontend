@@ -48,6 +48,10 @@
     <div class="text-end mb-4">
       <h4 class="fw-bold">Total HTVA : {{ blData.totalHt | number:'1.2-2' }} DH</h4>
     </div>
+    <div class="col-md-6">
+  <label>client (Nom du réceptionnaire) :</label>
+  <input type="text" class="form-control" [(ngModel)]="blData.destinataire">
+</div>
 
     <div class="form-group border p-3 bg-light rounded">
       <label class="fw-bold mb-2">Cachet du client (Image) :</label>

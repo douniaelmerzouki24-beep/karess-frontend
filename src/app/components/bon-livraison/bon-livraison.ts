@@ -14,6 +14,7 @@ export class BonLivraisonComponent {
   blData: any = {
     numeroBL: '',
     clientNom: '',
+    destinataire: '',
     objet: '',
     totalHt: 0,
     items: [
@@ -67,6 +68,6 @@ export class BonLivraisonComponent {
 
 ouvrirPdf(id: number) {
   // Ouvre le PDF dans un nouvel onglet du navigateur
-  window.open(`https://karess-backend-production-6a64.up.railway.app/api/bl/pdf/${id}`, '_blank');
+  window.open(`http://localhost:8080/api/bl/pdf/${id}`, '_blank');
 }
 }

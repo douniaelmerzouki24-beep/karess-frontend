@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BonLivraisonService {
-  private apiUrl = 'https://karess-backend-production-6a64.up.railway.app/api/bl';
+  private apiUrl = 'http://localhost:8080/api/bl';
 
   constructor(private http: HttpClient) { }
 
